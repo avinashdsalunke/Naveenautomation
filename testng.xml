@@ -8,7 +8,7 @@
 		<classes>
 			<class name="Testcases.registertest" />
 			<class name="Testcases.logintest" />
-						<class name="Testcases.verifytab" />
+			<class name="Testcases.verifytab" />
 			<class name="Testcases.addcartverify" />
 		
 

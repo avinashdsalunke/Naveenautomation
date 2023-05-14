@@ -1,7 +1,6 @@
 package Testcases;
 
 import java.io.IOException;
-import java.time.Duration;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -13,9 +12,6 @@ public class verifytab extends baseclass{
 	 SoftAssert assertions = new SoftAssert();
 
 		public void verifytab() throws IOException {
-			launchbrowser();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			tabobjectmodel TOM=new tabobjectmodel(driver);
 			
 			TOM.desktopstab().click();

@@ -15,17 +15,12 @@ public class logintest extends baseclass {
 	SoftAssert assertions = new SoftAssert();
 
 	public void validlogin() throws IOException, InterruptedException {
-		launchbrowser();
-		driver.manage().window().maximize();
 		LoginPageObject LPO = new LoginPageObject(driver);
 
 		LPO.myaccount().click();
 		LPO.login().click();
-		
 		LPO.emaillogin().sendKeys(registertest.email);
-
 		LPO.password().sendKeys(constant.password);
-
 		LPO.loginclick().click();
 
 		String A = LPO.validtext().getText();

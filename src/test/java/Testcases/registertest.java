@@ -1,39 +1,29 @@
 package Testcases;
+
 import Resource.creative1;
 import java.io.IOException;
-import java.time.Duration;
-
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import Resource.creative1;
-
 import PageObjectModel.RegisterPageObject;
 import Resource.baseclass;
 import Resource.constant;
-import Resource.creative1;
-import io.opentelemetry.sdk.resources.Resource;
 
 @Test
 public class registertest extends baseclass {
 	public static String email;
+	SoftAssert assertions = new SoftAssert();
 
-	  SoftAssert assertions = new SoftAssert();
-@Test
+	@Test
 	public void register() throws IOException {
-		launchbrowser();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-		RegisterPageObject RPO=new RegisterPageObject(driver);	
+		
+		RegisterPageObject RPO = new RegisterPageObject(driver);
 		RPO.myaccount().click();
 		RPO.ragister().click();
 		RPO.firstname().sendKeys(constant.firstname);
-		
-		RPO.lastname().sendKeys(constant.lastname);
-		 email=creative1.generateemail();
 
-	//	generatedEmail = creative1.generateemail();
+		RPO.lastname().sendKeys(constant.lastname);
+		email = creative1.generateemail();
+
 		RPO.email().sendKeys(email);
 		RPO.telephone().sendKeys(constant.phone);
 		RPO.password().sendKeys(constant.password);
@@ -41,22 +31,12 @@ public class registertest extends baseclass {
 		RPO.agreecheckbox().click();
 		RPO.continuebotton().click();
 		System.out.println(email);
-	
-		String P=RPO.validtext().getText();
-		String Q=constant.expectedtext;
-				assertions.assertEquals(P, Q, "ENTER INVALID DATA");
-			    assertions.assertAll();
 
-	  	 
-         }
+		String P = RPO.validtext().getText();
+		String Q = constant.expectedtext;
+		assertions.assertEquals(P, Q, "ENTER INVALID DATA");
+		assertions.assertAll();
 
-       
+	}
+
 }
-
-	 
-	
-
-		
-	
-
-

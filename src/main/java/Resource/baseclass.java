@@ -1,9 +1,9 @@
 package Resource;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
@@ -49,21 +49,21 @@ import org.testng.annotations.BeforeTest;public class baseclass {
 		}
 
 	}
-	
+	@BeforeMethod
 	public void launchbrowser() throws IOException {
         initializeDriver();
 		String url=prop.getProperty("url");
 		driver.get(url);
-		
-		
-		
-	}
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+		}
 	
-	/*@AfterMethod
+	@AfterMethod
 	public void quit() {
 		driver.quit();
 	}
-	*/
+	
 	 @BeforeTest
 	 public void ExtentReport() {
 	  extentManager.setup();

@@ -15,9 +15,9 @@ public class addcart {
 	
 	private By addtocartsamsung =By.xpath("//*[@id=\"content\"]/div[3]/div/div/div[2]/div[2]/button[1]/span");
 
-	private By totalcart=By.xpath("//*[@id=\"cart-total\"]");
+	private By totalcart=By.xpath("//div[@id='cart']");
 	
-	private By totalsum=By.xpath("(//td[@class='text-right'])[12]");
+	private By totalsum=By.xpath("//*[@id=\"cart-total\"]");
 	
 	private By iphoneprice=By.xpath("//p[contains(text(),'$123.20')]");
 	
