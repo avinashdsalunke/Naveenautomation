@@ -6,42 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcases.addcartverify">
-        <methods>
-          <include name="launchbrowser"/>
-          <include name="ExtentReport"/>
-          <include name="endReport"/>
-          <include name="addcart1"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- Testcases.addcartverify -->
       <class name="Testcases.verifytab">
         <methods>
           <include name="verifytab"/>
           <include name="launchbrowser"/>
           <include name="ExtentReport"/>
           <include name="endReport"/>
-          <include name="quit"/>
         </methods>
       </class> <!-- Testcases.verifytab -->
-      <class name="Testcases.registertest">
-        <methods>
-          <include name="launchbrowser"/>
-          <include name="ExtentReport"/>
-          <include name="endReport"/>
-          <include name="quit"/>
-          <include name="register"/>
-        </methods>
-      </class> <!-- Testcases.registertest -->
-      <class name="Testcases.logintest">
-        <methods>
-          <include name="launchbrowser"/>
-          <include name="ExtentReport"/>
-          <include name="endReport"/>
-          <include name="validlogin"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- Testcases.logintest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

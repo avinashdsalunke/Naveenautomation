@@ -52,7 +52,6 @@ double sum;
     		System.out.println("fail");                      //
     	}
     	
-    	assertions.assertNotEquals(sm, sm, tolerance);    	
-    
+    	assertions.assertNotEquals(sm, sm, tolerance); 
 	}
 }

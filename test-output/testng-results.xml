@@ -1,74 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-14T12:10:51 IST" name="Suite" finished-at="2023-05-14T12:11:35 IST" duration-ms="43770">
+  <suite started-at="2023-05-21T22:13:32 IST" name="Suite" finished-at="2023-05-21T22:14:52 IST" duration-ms="80266">
     <groups>
     </groups>
-    <test started-at="2023-05-14T12:10:51 IST" name="Test" finished-at="2023-05-14T12:11:35 IST" duration-ms="43770">
+    <test started-at="2023-05-21T22:13:32 IST" name="Test" finished-at="2023-05-21T22:14:52 IST" duration-ms="80266">
       <class name="Testcases.verifytab">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.verifytab@1189dd52]" started-at="2023-05-14T12:11:14 IST" name="launchbrowser" finished-at="2023-05-14T12:11:19 IST" duration-ms="5465" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.verifytab@35cabb2a]" started-at="2023-05-21T22:14:07 IST" name="launchbrowser" finished-at="2023-05-21T22:14:18 IST" duration-ms="10810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="verifytab()[pri:0, instance:Testcases.verifytab@1189dd52]" started-at="2023-05-14T12:11:19 IST" name="verifytab" finished-at="2023-05-14T12:11:23 IST" duration-ms="3698" status="PASS">
+        <test-method signature="verifytab()[pri:0, instance:Testcases.verifytab@35cabb2a]" started-at="2023-05-21T22:14:18 IST" name="verifytab" finished-at="2023-05-21T22:14:19 IST" duration-ms="993" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [PC (0)] but found [PC (1)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [PC (0)] but found [PC (1)]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at PageObjectModel.common.assersion(common.java:20)
+at Testcases.verifytab.verifytab(verifytab.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifytab -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:Testcases.verifytab@1189dd52]" started-at="2023-05-14T12:11:23 IST" name="quit" finished-at="2023-05-14T12:11:23 IST" duration-ms="542" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
       </class> <!-- Testcases.verifytab -->
       <class name="Testcases.registertest">
-        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:Testcases.registertest@595b007d]" started-at="2023-05-14T12:10:51 IST" name="ExtentReport" finished-at="2023-05-14T12:10:52 IST" duration-ms="804" status="PASS">
+        <test-method is-config="true" signature="ExtentReport()[pri:0, instance:Testcases.registertest@16293aa2]" started-at="2023-05-21T22:13:32 IST" name="ExtentReport" finished-at="2023-05-21T22:13:34 IST" duration-ms="2173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtentReport -->
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.registertest@595b007d]" started-at="2023-05-14T12:10:52 IST" name="launchbrowser" finished-at="2023-05-14T12:11:01 IST" duration-ms="8648" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.registertest@16293aa2]" started-at="2023-05-21T22:13:34 IST" name="launchbrowser" finished-at="2023-05-21T22:13:47 IST" duration-ms="12932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="register()[pri:0, instance:Testcases.registertest@595b007d]" started-at="2023-05-14T12:11:01 IST" name="register" finished-at="2023-05-14T12:11:05 IST" duration-ms="3798" status="PASS">
+        <test-method signature="register()[pri:0, instance:Testcases.registertest@16293aa2]" started-at="2023-05-21T22:13:47 IST" name="register" finished-at="2023-05-21T22:13:53 IST" duration-ms="5801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:Testcases.registertest@595b007d]" started-at="2023-05-14T12:11:05 IST" name="quit" finished-at="2023-05-14T12:11:05 IST" duration-ms="576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:Testcases.registertest@595b007d]" started-at="2023-05-14T12:11:34 IST" name="endReport" finished-at="2023-05-14T12:11:35 IST" duration-ms="850" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:Testcases.registertest@16293aa2]" started-at="2023-05-21T22:14:49 IST" name="endReport" finished-at="2023-05-21T22:14:52 IST" duration-ms="3326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- Testcases.registertest -->
       <class name="Testcases.logintest">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.logintest@7e07db1f]" started-at="2023-05-14T12:11:05 IST" name="launchbrowser" finished-at="2023-05-14T12:11:11 IST" duration-ms="5360" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.logintest@3a93b025]" started-at="2023-05-21T22:13:53 IST" name="launchbrowser" finished-at="2023-05-21T22:14:03 IST" duration-ms="10471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="validlogin()[pri:0, instance:Testcases.logintest@7e07db1f]" started-at="2023-05-14T12:11:11 IST" name="validlogin" finished-at="2023-05-14T12:11:13 IST" duration-ms="2305" status="PASS">
+        <test-method signature="validlogin()[pri:0, instance:Testcases.logintest@3a93b025]" started-at="2023-05-21T22:14:03 IST" name="validlogin" finished-at="2023-05-21T22:14:07 IST" duration-ms="3455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogin -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:Testcases.logintest@7e07db1f]" started-at="2023-05-14T12:11:13 IST" name="quit" finished-at="2023-05-14T12:11:14 IST" duration-ms="531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
       </class> <!-- Testcases.logintest -->
       <class name="Testcases.addcartverify">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.addcartverify@36bc55de]" started-at="2023-05-14T12:11:23 IST" name="launchbrowser" finished-at="2023-05-14T12:11:29 IST" duration-ms="5323" status="PASS">
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:Testcases.addcartverify@7e07db1f]" started-at="2023-05-21T22:14:19 IST" name="launchbrowser" finished-at="2023-05-21T22:14:39 IST" duration-ms="19821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="addcart1()[pri:0, instance:Testcases.addcartverify@36bc55de]" started-at="2023-05-14T12:11:29 IST" name="addcart1" finished-at="2023-05-14T12:11:34 IST" duration-ms="5236" status="PASS">
+        <test-method signature="addcart1()[pri:0, instance:Testcases.addcartverify@7e07db1f]" started-at="2023-05-21T22:14:39 IST" name="addcart1" finished-at="2023-05-21T22:14:49 IST" duration-ms="9337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addcart1 -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:Testcases.addcartverify@36bc55de]" started-at="2023-05-14T12:11:34 IST" name="quit" finished-at="2023-05-14T12:11:34 IST" duration-ms="499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
       </class> <!-- Testcases.addcartverify -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

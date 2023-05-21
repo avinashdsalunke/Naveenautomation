@@ -12,5 +12,5 @@ public class constant {
 	public static String expectedtext="Congratulations! Your new account has been successfully created!";
 	public static String mob="iphone";
 	public static String samsung="Samsung Galaxy Tab 10.1";
-	
+
 }

@@ -59,11 +59,11 @@ import org.testng.annotations.BeforeTest;public class baseclass {
 
 		}
 	
-	@AfterMethod
+/*	@AfterMethod
 	public void quit() {
 		driver.quit();
 	}
-	
+	*/
 	 @BeforeTest
 	 public void ExtentReport() {
 	  extentManager.setup();

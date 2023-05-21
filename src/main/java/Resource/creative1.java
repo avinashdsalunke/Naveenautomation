@@ -21,16 +21,6 @@ public static void main(String[] args) {
     System.out.println(generatedEmail);
 }
 
-//public static String 
-
-
-
-
-
-
-
-
-
 
 
 }
